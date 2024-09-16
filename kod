@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println("Podaj liczbę punktów:");
+        
+        int punkty = sc.nextInt();
+        
+        if (punkty > 100) {
+            System.out.println("Podano złą liczbę punktów.");
+        } else if (punkty > 70) {
+            System.out.println("Świetnie, dobrze ci poszło!");
+        } else if (punkty > 50) {
+            System.out.println("Średni wynik, jesteś na dobrej drodze.");
+        } else {
+            System.out.println("Musisz się jeszcze dużo nauczyć.");
+        }
+        
+        sc.close();
+    }
+}
